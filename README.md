@@ -1,12 +1,12 @@
 # God Scan - Fresh Token Bot
 
-Telegram bot for ultra-fresh Solana token listings (60 second filter)
+Telegram bot for monitoring ultra-fresh Solana token listings from DexScreener.
 
 ## Features
-- Monitors DexScreener new pairs
-- Alerts for tokens launched in last 60 seconds
+- Monitors tokens launched in last 60 seconds
 - Full contract address display
-- Batch sending up to 10 tokens
+- Batch processing (up to 10 tokens)
+- Real-time Telegram alerts
 - No duplicates
 
 ## Setup

@@ -43,7 +43,7 @@ export class TelegramService {
   private formatTokenMessage(pair: DexScreenerPair, ageInSeconds: number): string {
     const tokenName = pair.baseToken.name || 'Unknown';
     const tokenSymbol = pair.baseToken.symbol || 'UNKNOWN';
-    const contractAddress = pair.baseToken.address; // FULL ADDRESS - NO SHORTENING
+    const contractAddress = pair.baseToken.address;
     const price = formatPrice(pair.priceUsd);
     const liquidity = formatNumber(pair.liquidity?.usd);
     const marketCap = formatNumber(pair.marketCap);

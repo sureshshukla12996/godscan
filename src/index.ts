@@ -1,4 +1,4 @@
-import { loadConfig } from './config';
+import { loadConfig, Config } from './config';
 import { DexScreenerService } from './services/dexscreener.service';
 import { TelegramService } from './services/telegram.service';
 import { TokenTracker } from './services/tracker.service';
@@ -81,7 +81,7 @@ async function runCheckCycle(
   dexScreenerService: DexScreenerService,
   telegramService: TelegramService,
   tokenTracker: TokenTracker,
-  config: any
+  config: Config
 ): Promise<void> {
   log('🔍 Checking DexScreener API...');
 
